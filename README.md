@@ -1,7 +1,7 @@
 # Template for domain in Module Fed
 
-# If you're about to use this for Applied, then don't
-# forget the .npmrc file
+## If you're about to use this for Applied
+Do not forget the .npmrc file
 
 # How this template was initially created
 
