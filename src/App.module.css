@@ -1,0 +1,78 @@
+
+
+.App {
+    height: 100%;
+    display: grid;
+
+
+    /*
+        repeat(number of columns/rows, the column width we want);
+
+     */
+    /*
+        4 cols while taking the gaps in account
+        grid-template-columns: repeat(4, calc((100% - (16px * 3))/4));
+        is equiv to
+         grid-template-columns: repeat(4, 1fr);
+
+     */
+    grid-template-columns: repeat(12, minmax(0,1fr));
+    grid-column-gap: 16px;
+
+
+    grid-template-rows: 100px 30px 1fr 50px;
+    grid-row-gap: 16px;
+
+}
+
+.App > * {
+    background-color: #b0b0b0;
+
+    contain: layout;
+}
+
+.App .header {
+    grid-column-start: 1;
+    grid-column-end: span 12;
+    outline: 1px salmon solid;
+}
+
+.App .nav {
+    grid-column-start: 1;
+    grid-column-end: span 12;
+    outline: 1px #4d8cfe solid;
+}
+
+
+.App .sideBar {
+    grid-column: 1/ span 2; /* starts, end */
+    grid-row: 3;
+
+    outline: 1px #89fa72 solid;
+
+    /*container-type: inline-size;*/
+    /*container-name: sidebar-cntr;*/
+}
+
+/*@container (min-width:200px) {*/
+/*    .sideBar {*/
+/*        background-color: darkblue;*/
+/*    }*/
+/*}*/
+
+.App .content {
+    background-color: aliceblue;
+    grid-column-start: 3;
+    grid-column-end: span 10;
+
+    grid-row: 3;
+
+    outline: 1px #72faf1 solid;
+}
+
+.App .footer {
+
+    grid-column-start: 1;
+    grid-column-end: span 12;
+    outline: 1px #f172fa solid;
+}
