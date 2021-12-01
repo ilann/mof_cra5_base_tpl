@@ -1,6 +1,19 @@
-# Getting Started with Create React App
+# Template for domain in Module Fed
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# If you're about to use this for Applied, then don't
+# forget the .npmrc file
+
+# How this template was initially created
+
+    $ npx create-react-app@next --scripts-version=@next --template=typescript@next mof_cra5_template
+
+# todo
+
+[ ] update the `name` in package.json
+    
+    Is this template was used to create 
+    several domains, Make sure that there is no coliision in the package.json name.
+
 
 ## Available Scripts
 
