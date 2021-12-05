@@ -1,0 +1,14 @@
+
+
+.NavBar {
+    display: flex;
+
+}
+
+
+.NavBar > * {
+    flex: 0 0;
+    padding: 2px;
+    outline: 1px salmon solid;
+    margin-right: 4px;
+}
