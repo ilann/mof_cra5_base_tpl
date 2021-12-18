@@ -10,6 +10,7 @@ import Selector from './shared/Selector/Selector';
 import * as AppSelectors from './appState/AppSelectors';
 // import {useSelector} from 'react-redux';
 import {DebugData} from './types/DebugData';
+import {MainSpace} from './features/MainSpace';
 
 function App() {
 
@@ -45,7 +46,9 @@ function App() {
             <div className={styles.sideBar}>
                 <SideBar/>
             </div>
-            <div className={styles.content}>Contetn</div>
+            <div className={styles.content}>
+                <MainSpace/>
+            </div>
             <div className={styles.footer}>footer</div>
         </div>
     );
